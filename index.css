@@ -59,7 +59,7 @@ body {
 }
 
 .button:hover {
-  background: rgbai(128, 128, 128, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   color: #e0e5ec;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 79, 255, 0.6);
