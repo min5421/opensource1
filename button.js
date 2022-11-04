@@ -28,16 +28,9 @@ function getMovie() {
           item.id = genre.id;
           genre_group.appendChild(item);
           item.addEventListener("click", function (event) {
-             if(item.style.backgroundColor == "black"){
-              item.style.backgroundColor = "white";
-              item.style.color = "black";
-              clicked.pop(genre.name);
-
-            } else{
-                item.style.backgroundColor = "black";
-                item.style.color = "white"
-                clicked.push(genre.name);
-            }
+            item.style.backgroundColor = "black";
+            item.style.color = "white";
+            clicked.push(genre.name);
           });
         }
       });
@@ -52,17 +45,11 @@ function makesec() {
   adult_all.appendChild(adults);
   adults.id = "adult";
   adults.addEventListener("click", function (event) {
-    if(adults.style.backgroundColor == "black"){
-      adults.style.backgroundColor = "white";
-      adults.style.color = "black";
-      adult = false;
-    } else{
-      adults.style.backgroundColor = "black";
-      adults.style.color = "white";
-      adult = true;
-    }
+    adults.style.backgroundColor = "black";
+    adults.style.color = "white";
+    adult = true;
   });
-  /*
+
   const every = document.createElement("button");
   every.classList = "every_button button";
 
@@ -74,7 +61,6 @@ function makesec() {
     every.style.color = "white";
     adult = false;
   });
-  */
 }
 
 function make_enter() {
